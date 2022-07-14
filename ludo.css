@@ -1,0 +1,181 @@
+*{
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+.turn{
+  width: 100px;
+  margin: 50px auto 50px auto;
+  padding: 10px;
+  font-weight: bolder;
+  text-align: center;
+  color: white;
+  background-color: red;
+  border-radius: 45px;
+  box-shadow: 2px 2px 10px black;
+}
+.board {
+    width: 500px;
+    height: 500px;
+    margin: 0px auto 0px auto; 
+    display: grid;
+   
+    border: 1px black solid;
+    grid-template-rows: 4fr 2fr 4fr;
+  }
+  .top, .bottom{
+    display: grid;
+    grid-template-columns: 4fr 2fr 4fr;
+  }
+  .mid{
+    display: grid;
+    grid-template-columns: 4fr 2fr 4fr;
+  }
+  /*
+  .grid-item{
+    border: 1px solid black;
+  }*/
+
+  .pathv{
+    display: grid;
+    grid-template-columns: repeat(3,30%);
+    grid-template-rows: repeat(6,15%);
+    justify-content: space-evenly;
+    align-content: space-evenly;    
+
+  }
+  .pathv-item{
+background-color: white;
+  }
+.pathh{
+    display: grid;
+    grid-template-columns: repeat(6,15%);
+    grid-template-rows: repeat(3,30%);
+    justify-content: space-evenly;
+    align-content: space-evenly;    
+
+}
+.pathh-item{
+  background-color: white;
+}
+
+.lightred{
+  background-color: #f75f54;
+}
+.red{
+  background-color: red;
+}
+
+#_2,#_4,#_6,#_8{
+  background-color: grey;
+}
+
+.lightblue{
+  background-color: #5454f7;
+}
+
+.blue{
+  background-color: blue;
+}
+
+#_5{
+  background-color: white;
+  border: 1px solid black;
+}
+
+.lightgreen{
+  background-color: #32a852;
+}
+
+.green{
+  background-color: green
+}
+
+.lightyellow{
+  background-color:#f5f55b;
+}
+
+.yellow{
+  background-color: #fac402;
+}
+
+.peice-cont{
+ background-color: white;
+ border-radius: 50%;
+}
+  
+.peice{
+  width: 50%;
+  height: 50%;
+  margin:auto;
+  margin-top: 25%;
+  border-radius: 50%;
+}
+
+.dice-cont{
+  width: 50%;
+  height: 50%;
+  margin:25% auto 0 auto;
+  
+}
+.vert{
+  height: 90%;
+  width: 90%;
+  margin: 5%;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+.horiz{
+ height: 90%;
+ width: 90%;
+ margin: 5%;
+ border-radius: 50%;
+ border: 3px solid white;
+}
+
+.canMove{
+border: 5px solid rgb(241, 48, 177);
+}
+
+.stop-cont{
+  background-color: inherit;
+}
+
+.expand{
+  position: absolute;
+  background-color: black;
+}
+
+.expand>div.vert{
+  float: left;
+}
+.expand > div{
+  width: 25px;
+  padding: 10px;
+  margin: 3px;
+}
+
+img.peice{
+  display: block;
+}
+
+.player{
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: 73.33%;
+  grid-template-rows:  30% 13.33% 30%;
+  grid-row-gap: 0px;
+  
+}
+
+.cont{
+  display: grid;
+  grid-template-columns: 41% 41%;
+  justify-content: space-between;
+}
+
+.cont2{
+  text-align: center;
+  font-weight: bolder;
+}
